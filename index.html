@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCARFACE | Kyrollos Melad — Dual-Personality Portfolio (Tech Innovator & Financial Precision)</title>
+    <meta name="description" content="Dual-personality portfolio of Scarface (Kyrollos Melad) - Combining 1 Year Bank Teller & Microfinance experience at Tanmeyah with Full Stack .NET Development, CCNA & MCSA Networking, and Data Analysis.">
+    
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/images/avatar-scarface.png">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body data-persona="fusion">
+
+    <!-- ======================================================================
+         TOP NAVIGATION
+         ====================================================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="brand-logo">
+                <img src="assets/images/scarface-signature-alt.png" alt="Scarface Signature" class="logo-img">
+                <div class="brand-text-wrap">
+                    <span class="brand-title">SCARFACE</span>
+                    <span class="brand-sub">KYROLLOS MELAD</span>
+                </div>
+            </a>
+
+            <!-- Persona Switcher -->
+            <div class="persona-switcher" role="group" aria-label="Persona view mode">
+                <button class="switcher-btn active" data-mode="fusion" title="View Combined Dual Profile">
+                    <span>⚡</span> Dual Fusion
+                </button>
+                <button class="switcher-btn" data-mode="tech" title="View Tech & Developer Profile">
+                    <span>💻</span> Tech Side
+                </button>
+                <button class="switcher-btn" data-mode="finance" title="View Banking & Finance Profile">
+                    <span>🏦</span> Finance Side
+                </button>
+            </div>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills & Certs</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Action Buttons -->
+            <div class="nav-actions">
+                <button class="btn btn-sm btn-fusion btn-open-cv" title="View and download Dual CV">
+                    📄 Request Dual CV
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================================================================
+         HERO SECTION (SPLIT THEME)
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="hero-banner-card">
+                
+                <!-- Hero Header Bar -->
+                <div class="hero-card-header">
+                    <img src="assets/images/scarface-signature.png" alt="Scarface" class="signature-small">
+                    <div class="hero-tagline-text">- Digital Explorer & Financial Precision -</div>
+                    <div>
+                        <span class="tag-chip tag-purple">⚡ Dual-Discipline Specialist</span>
+                    </div>
+                </div>
+
+                <!-- Split Grid -->
+                <div class="hero-split-grid">
+                    
+                    <!-- Left Side: Tech Innovator (Scarface) -->
+                    <div class="hero-col-tech side-tech-only">
+                        <div class="avatar-frame-wrap">
+                            <img src="assets/images/avatar-scarface.png" alt="Scarface - The Tech Innovator" class="avatar-img avatar-tech-border">
+                            <span class="avatar-badge tag-tech">DEV & NETWORKING</span>
+                        </div>
+
+                        <div class="hero-content-block">
+                            <h2 class="hero-persona-title gradient-text-tech">SCARFACE</h2>
+                            <div class="hero-persona-role" style="color: var(--tech-cyan);">The Tech Innovator & Digital Explorer</div>
+                            
+                            <div class="hero-badges-row">
+                                <span class="tag-chip tag-tech">CCNA Certified</span>
+                                <span class="tag-chip tag-tech">MCSA Certified</span>
+                                <span class="tag-chip tag-tech">.NET Full Stack</span>
+                                <span class="tag-chip tag-purple">Data Analysis (94%)</span>
+                            </div>
+
+                            <p style="font-size: 0.9rem; color: #94a3b8; max-width: 440px; margin: 0 auto 1.25rem;">
+                                Architecting robust network topologies, high-throughput .NET MVC systems, and analytical reporting models with engineering discipline.
+                            </p>
+
+                            <div class="hero-side-footer">
+                                <a href="#skills" class="btn btn-sm btn-primary-tech">Explore Tech Stack</a>
+                                <a href="#projects" class="btn btn-sm btn-outline">View K-filme ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Center VS Orb -->
+                    <div class="hero-vs-divider">
+                        <div class="vs-orb" title="Click to toggle Dual Fusion mode" onclick="setPersonaMode('fusion')">
+                            VS
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Financial Precision Specialist (Kyrollos Melad) -->
+                    <div class="hero-col-finance side-finance-only">
+                        <div class="avatar-frame-wrap">
+                            <img src="assets/images/avatar-kyrollos.png" alt="Kyrollos Melad - Bank Teller & Microfinance Specialist" class="avatar-img avatar-finance-border">
+                            <span class="avatar-badge tag-green">BANK TELLER & OPS</span>
+                        </div>
+
+                        <div class="hero-content-block">
+                            <h2 class="hero-persona-title gradient-text-finance">KYROLLOS MELAD</h2>
+                            <div class="hero-persona-role" style="color: var(--fin-emerald);">The Financial Precision Specialist</div>
+                            
+                            <div class="hero-badges-row">
+                                <span class="tag-chip tag-green">1 Year Experience</span>
+                                <span class="tag-chip tag-green">Bank Teller @ Tanmeyah</span>
+                                <span class="tag-chip tag-fin">Microfinance Ops</span>
+                                <span class="tag-chip tag-fin">KYC & Compliance</span>
+                            </div>
+
+                            <p style="font-size: 0.9rem; color: #94a3b8; max-width: 440px; margin: 0 auto 1.25rem;">
+                                Executing high-volume daily cash receipts, customer due diligence, microfinance underwriting, and zero-variance ledger audits.
+                            </p>
+
+                            <div class="hero-side-footer">
+                                <a href="#experience" class="btn btn-sm btn-primary-fin">View Banking Ops</a>
+                                <button class="btn btn-sm btn-outline btn-open-cv">Download CV</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         MERGED NARRATIVE / ABOUT SECTION
+         ====================================================================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle subtitle-fusion">Professional Synthesis</div>
+                <h2 class="section-title">About <span class="gradient-text-fusion">Scarface / Kyrollos</span></h2>
+                <p class="section-description">
+                    Uniting the meticulous precision of banking operations with the engineering power of modern software development and networking.
+                </p>
+            </div>
+
+            <div class="about-box-card">
+                <p class="merged-bio-text">
+                    "A detail-oriented banking professional by day with an underlying passion for technology. Transitioning analytical and precision skills from microfinance into cutting-edge networking and development. Experienced with compliance and data analysis, seeking to innovate at the convergence of banking discipline and digital technology."
+                </p>
+
+                <!-- 3 Synergy Pillars -->
+                <div class="about-pillars-grid">
+                    
+                    <div class="pillar-card">
+                        <div class="pillar-header">
+                            <div class="pillar-icon-box icon-fin">🏦</div>
+                            <div>
+                                <h3 class="pillar-title">Core Banking & Microfinance</h3>
+                                <span style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">Tanmeyah Operations</span>
+                            </div>
+                        </div>
+                        <p style="font-size:0.88rem; color:var(--text-secondary);">
+                            1 Full Year of front-line teller counter mastery, handling high cash volumes, strict KYC compliance, and loan verification with zero discrepancies.
+                        </p>
+                        <div class="pillar-chips-list">
+                            <span class="tag-chip tag-fin">Cash Handling</span>
+                            <span class="tag-chip tag-fin">KYC / AML</span>
+                            <span class="tag-chip tag-green">Vault Balancing</span>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-header">
+                            <div class="pillar-icon-box icon-tech">⚡</div>
+                            <div>
+                                <h3 class="pillar-title">Advanced Tech & Infrastructure</h3>
+                                <span style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">CCNA • MCSA • .NET</span>
+                            </div>
+                        </div>
+                        <p style="font-size:0.88rem; color:var(--text-secondary);">
+                            Equipped with certified network engineering foundations, Windows Server infrastructure mastery, and full-stack C# / ASP.NET MVC software skills.
+                        </p>
+                        <div class="pillar-chips-list">
+                            <span class="tag-chip tag-tech">CCNA Routing</span>
+                            <span class="tag-chip tag-tech">MCSA Server</span>
+                            <span class="tag-chip tag-purple">C# / ASP.NET</span>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-header">
+                            <div class="pillar-icon-box icon-green">📊</div>
+                            <div>
+                                <h3 class="pillar-title">Data Analytics & Accuracy</h3>
+                                <span style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">ITIDA / TIEC (94% Honors)</span>
+                            </div>
+                        </div>
+                        <p style="font-size:0.88rem; color:var(--text-secondary);">
+                            Leveraging relational SQL database design, Excel spreadsheet modeling, and quantitative analysis to drive automated insights and risk assessment.
+                        </p>
+                        <div class="pillar-chips-list">
+                            <span class="tag-chip tag-tech">SQL Relational DB</span>
+                            <span class="tag-chip tag-green">Statistical Analysis</span>
+                            <span class="tag-chip tag-purple">KPI Modeling</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         SKILLS & CERTIFICATIONS SECTION
+         ====================================================================== -->
+    <section class="section" id="skills" style="background: rgba(10, 15, 28, 0.5);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle subtitle-tech">Core Capabilities</div>
+                <h2 class="section-title">Skills & <span class="gradient-text-tech">Certifications</span></h2>
+                <p class="section-description">
+                    A dual-stack arsenal combining technical software engineering and networking with certified institutional banking expertise.
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs-nav">
+                <button class="filter-tab-btn active" data-filter="all">All Skills</button>
+                <button class="filter-tab-btn" data-filter="networking">Networking & Infrastructure (CCNA/MCSA)</button>
+                <button class="filter-tab-btn" data-filter="development">Development & Data (.NET/SQL)</button>
+                <button class="filter-tab-btn" data-filter="banking">Banking & Microfinance (Tanmeyah)</button>
+            </div>
+
+            <!-- Skills Dynamic Grid -->
+            <div class="skills-grid" id="skills-container"></div>
+
+            <!-- Section Divider -->
+            <div style="margin-top: 5rem; text-align: center;">
+                <div class="section-subtitle subtitle-fusion">Accredited Credentials</div>
+                <h3 style="font-size: 1.85rem; margin-top: 0.5rem;">Professional Diplomas & Certificates</h3>
+            </div>
+
+            <!-- Certificates Dynamic Grid -->
+            <div class="certs-grid" id="certs-container"></div>
+
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         PORTFOLIO PROJECTS & CASE STUDIES
+         ====================================================================== -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle subtitle-fusion">Demonstrated Work</div>
+                <h2 class="section-title">Featured <span class="gradient-text-fusion">Projects & Operations</span></h2>
+                <p class="section-description">
+                    Explore live web development systems, data analytics models, and banking operational achievements.
+                </p>
+            </div>
+
+            <!-- Projects Dynamic Grid -->
+            <div class="projects-grid" id="projects-container"></div>
+
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         WORK EXPERIENCE & EDUCATION TIMELINE
+         ====================================================================== -->
+    <section class="section" id="experience" style="background: rgba(10, 15, 28, 0.5);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle subtitle-finance">Career Path</div>
+                <h2 class="section-title">Work Experience & <span class="gradient-text-finance">Milestones</span></h2>
+                <p class="section-description">
+                    Documented professional journey across microfinance banking operations, tech academies, and higher education.
+                </p>
+            </div>
+
+            <div class="timeline-wrap" id="experience-container"></div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT & CALL TO ACTION
+         ====================================================================== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle subtitle-tech">Direct Collaboration</div>
+                <h2 class="section-title">Let's Connect & <span class="gradient-text-tech">Build Something</span></h2>
+                <p class="section-description">
+                    Looking to hire a dual-skilled professional with high precision and strong technical problem-solving? Let's talk!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                
+                <!-- Contact Channels Card -->
+                <div class="contact-info-card">
+                    <div>
+                        <h3 style="font-size: 1.45rem; margin-bottom: 0.35rem;">Get In Touch Directly</h3>
+                        <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 1.25rem;">
+                            Reach out for full-time opportunities, software development, network engineering, or banking operations.
+                        </p>
+
+                        <!-- Primary Direct Channels -->
+                        <div class="contact-channels-list" style="margin-bottom: 1.25rem;">
+                            
+                            <!-- Email -->
+                            <div class="contact-channel-item" data-copy="kyrollosmelad02@gmail.com" title="Click to copy email address">
+                                <div class="channel-icon">✉️</div>
+                                <div style="flex:1;">
+                                    <div class="channel-label">Email Address</div>
+                                    <div class="channel-val">kyrollosmelad02@gmail.com</div>
+                                </div>
+                                <a href="mailto:kyrollosmelad02@gmail.com" class="btn-icon-action" style="text-decoration:none;">Send ↗</a>
+                                <span class="btn-icon-action" style="cursor:pointer;">Copy 📋</span>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="contact-channel-item">
+                                <div class="channel-icon">📍</div>
+                                <div style="flex:1;">
+                                    <div class="channel-label">Current Location</div>
+                                    <div class="channel-val">Based in Egypt • Ready to Go!</div>
+                                </div>
+                                <span class="tag-chip tag-green">Available</span>
+                            </div>
+
+                        </div>
+
+                        <!-- Multi-Carrier Telephony & WhatsApp -->
+                        <div class="contact-sub-header">
+                            <span>📞 Direct Mobile & WhatsApp</span>
+                            <span style="font-size:0.75rem; color:var(--text-muted);">Egypt Lines</span>
+                        </div>
+                        <div class="carriers-list">
+                            
+                            <!-- We -->
+                            <div class="carrier-item-card carrier-purple">
+                                <div class="carrier-meta">
+                                    <span class="carrier-badge badge-we">WE</span>
+                                    <span class="carrier-phone-text">+20 155 303 0325</span>
+                                </div>
+                                <div class="carrier-actions">
+                                    <a href="tel:+201553030325" class="btn-icon-action" title="Call We Number">Call 📞</a>
+                                    <a href="https://wa.me/201553030325" target="_blank" rel="noopener" class="btn-icon-action btn-wa" title="Chat on WhatsApp">WhatsApp 💬</a>
+                                    <button class="btn-icon-action" data-copy="+201553030325" title="Copy Number">📋</button>
+                                </div>
+                            </div>
+
+                            <!-- Orange -->
+                            <div class="carrier-item-card carrier-orange">
+                                <div class="carrier-meta">
+                                    <span class="carrier-badge badge-orange">ORANGE</span>
+                                    <span class="carrier-phone-text">+20 120 296 3714</span>
+                                </div>
+                                <div class="carrier-actions">
+                                    <a href="tel:+201202963714" class="btn-icon-action" title="Call Orange Number">Call 📞</a>
+                                    <a href="https://wa.me/201202963714" target="_blank" rel="noopener" class="btn-icon-action btn-wa" title="Chat on WhatsApp">WhatsApp 💬</a>
+                                    <button class="btn-icon-action" data-copy="+201202963714" title="Copy Number">📋</button>
+                                </div>
+                            </div>
+
+                            <!-- Vodafone -->
+                            <div class="carrier-item-card carrier-red">
+                                <div class="carrier-meta">
+                                    <span class="carrier-badge badge-vodafone">VODAFONE</span>
+                                    <span class="carrier-phone-text">+20 155 239 4784</span>
+                                </div>
+                                <div class="carrier-actions">
+                                    <a href="tel:+201552394784" class="btn-icon-action" title="Call Vodafone Number">Call 📞</a>
+                                    <a href="https://wa.me/201552394784" target="_blank" rel="noopener" class="btn-icon-action btn-wa" title="Chat on WhatsApp">WhatsApp 💬</a>
+                                    <button class="btn-icon-action" data-copy="+201552394784" title="Copy Number">📋</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- E-Wallets & Fintech Payments -->
+                        <div class="contact-sub-header">
+                            <span>💳 Digital Wallets & Payments</span>
+                            <span style="font-size:0.75rem; color:var(--fin-emerald);">Fintech Ready</span>
+                        </div>
+                        <div class="wallets-fintech-grid">
+                            
+                            <!-- InstaPay -->
+                            <div class="wallet-card">
+                                <div class="wallet-header">
+                                    <span class="wallet-name">⚡ InstaPay</span>
+                                    <span class="carrier-badge badge-instapay">Instant Bank</span>
+                                </div>
+                                <div class="wallet-number">+20 155 303 0325</div>
+                                <button class="btn-icon-action" data-copy="+201553030325" style="width:100%; justify-content:center;">
+                                    Copy InstaPay 📋
+                                </button>
+                            </div>
+
+                            <!-- Vodafone Cash -->
+                            <div class="wallet-card">
+                                <div class="wallet-header">
+                                    <span class="wallet-name">🔴 Vodafone Cash</span>
+                                    <span class="carrier-badge badge-vodafone">E-Wallet</span>
+                                </div>
+                                <div class="wallet-number">+20 155 239 4784</div>
+                                <button class="btn-icon-action" data-copy="+201552394784" style="width:100%; justify-content:center;">
+                                    Copy VF Cash 📋
+                                </button>
+                            </div>
+
+                            <!-- Orange Cash -->
+                            <div class="wallet-card">
+                                <div class="wallet-header">
+                                    <span class="wallet-name">🟠 Orange Cash</span>
+                                    <span class="carrier-badge badge-orange">E-Wallet</span>
+                                </div>
+                                <div class="wallet-number">+20 120 296 3714</div>
+                                <button class="btn-icon-action" data-copy="+201202963714" style="width:100%; justify-content:center;">
+                                    Copy Orange Cash 📋
+                                </button>
+                            </div>
+
+                            <!-- We Pay -->
+                            <div class="wallet-card">
+                                <div class="wallet-header">
+                                    <span class="wallet-name">🟣 We Pay</span>
+                                    <span class="carrier-badge badge-we">E-Wallet</span>
+                                </div>
+                                <div class="wallet-number">+20 155 303 0325</div>
+                                <button class="btn-icon-action" data-copy="+201553030325" style="width:100%; justify-content:center;">
+                                    Copy We Pay 📋
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Social Media Network Hub -->
+                        <div class="contact-sub-header">
+                            <span>🌐 Social & Professional Profiles</span>
+                        </div>
+                        <div class="social-matrix-grid">
+                            <a href="https://www.linkedin.com/in/kyrollos-melad?utm_source=share_via&utm_content=profile&utm_medium=membe" target="_blank" rel="noopener" class="social-pill-btn soc-linkedin">
+                                <span>💼</span> LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/kyrollosmelad?igsi=cGhpcnhha2toc2Rr" target="_blank" rel="noopener" class="social-pill-btn soc-instagram">
+                                <span>📸</span> Instagram
+                            </a>
+                            <a href="https://www.facebook.com/share/1UUDhnjfzh/" target="_blank" rel="noopener" class="social-pill-btn soc-facebook">
+                                <span>👥</span> Facebook
+                            </a>
+                            <a href="https://x.com/KyrollosMelad" target="_blank" rel="noopener" class="social-pill-btn soc-twitter">
+                                <span>𝕏</span> X (Twitter)
+                            </a>
+                            <a href="https://www.threads.net/@kyrollosmelad" target="_blank" rel="noopener" class="social-pill-btn soc-threads">
+                                <span>🧵</span> Threads
+                            </a>
+                            <a href="https://www.snapchat.com/add/kyrollosmelad?share_id=KowsSc5w8vc&locale=en-US" target="_blank" rel="noopener" class="social-pill-btn soc-snapchat">
+                                <span>👻</span> Snapchat
+                            </a>
+                            <a href="https://link.gettap.co/engkyrollosrofaiel" target="_blank" rel="noopener" class="social-pill-btn soc-tap">
+                                <span>⚡</span> GetTap Card
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div style="margin-top: 1rem;">
+                        <button class="btn btn-fusion btn-lg btn-open-cv" style="width: 100%;">
+                            📄 REQUEST MY DUAL CV (BANK / TECH)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Direct Message Form Card -->
+                <div class="contact-form-card">
+                    <h3 style="font-size: 1.45rem; margin-bottom: 0.35rem;">Send a Direct Message</h3>
+                    <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 1.25rem;">
+                        Fill out the message below to connect instantly via <strong>WhatsApp chat</strong> or <strong>Official Email</strong>.
+                    </p>
+
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label class="form-label" for="contact-name">Your Full Name *</label>
+                            <input type="text" id="contact-name" class="form-input" placeholder="e.g. Recruiter / Company Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="contact-email">Your Email Address *</label>
+                            <input type="email" id="contact-email" class="form-input" placeholder="e.g. contact@company.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="contact-subject">Topic / Position</label>
+                            <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Job Opportunity / Full Stack Dev / Banking Ops">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="contact-message">Message or Inquiries *</label>
+                            <textarea id="contact-message" class="form-textarea" placeholder="Hello Kyrollos, I would like to discuss..." required></textarea>
+                        </div>
+
+                        <div class="channel-selector-wrap">
+                            <span style="font-size:0.8rem; color:var(--text-muted);">Send to WhatsApp:</span>
+                            <select id="contact-wa-number" class="channel-select">
+                                <option value="201553030325">WE Line (+20 155 303 0325) [Primary]</option>
+                                <option value="201202963714">Orange Line (+20 120 296 3714)</option>
+                                <option value="201552394784">Vodafone Line (+20 155 239 4784)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-actions-row">
+                            <button type="button" id="btn-submit-wa" class="btn btn-send-wa">
+                                💬 Send on WhatsApp
+                            </button>
+                            <button type="button" id="btn-submit-email" class="btn btn-send-email">
+                                ✉️ Send via Email
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         FOOTER
+         ====================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <img src="assets/images/scarface-signature.png" alt="Scarface Signature" class="footer-signature-img">
+            <div class="footer-tagline gradient-text-fusion">
+                "Innovating at the intersection of Finance & Tech."
+            </div>
+            
+            <div class="footer-links-row" style="flex-wrap: wrap;">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="https://www.linkedin.com/in/kyrollos-melad" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.instagram.com/kyrollosmelad" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.facebook.com/share/1UUDhnjfzh/" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://x.com/KyrollosMelad" target="_blank" rel="noopener">𝕏</a>
+                <a href="https://www.threads.net/@kyrollosmelad" target="_blank" rel="noopener">Threads</a>
+                <a href="https://www.snapchat.com/add/kyrollosmelad" target="_blank" rel="noopener">Snapchat</a>
+                <a href="https://link.gettap.co/englukastar112678" target="_blank" rel="noopener">GetTap</a>
+            </div>
+
+            <div class="footer-copy">
+                Copyright © 2026 Scarface (Kyrollos Melad). All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================================================================
+         MODAL: DUAL CV REQUEST & PREVIEW
+         ====================================================================== -->
+    <div class="modal-backdrop" id="cv-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div>
+                    <h3 style="font-size: 1.25rem;">📄 Professional Dual Curriculum Vitae</h3>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Kyrollos Melad Abd Elmalak</div>
+                </div>
+                <button class="modal-close-btn" id="cv-modal-close" aria-label="Close CV modal">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="cv-tabs-bar">
+                    <button class="cv-tab-btn active" data-cv-tab="fusion">⚡ Dual Summary</button>
+                    <button class="cv-tab-btn" data-cv-tab="tech">💻 Tech & Dev Profile</button>
+                    <button class="cv-tab-btn" data-cv-tab="finance">🏦 Banking & Ops</button>
+                    <button class="cv-tab-btn" data-cv-tab="pdf">📄 Original PDF View</button>
+                </div>
+
+                <div id="cv-content-area"></div>
+
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:1.5rem; flex-wrap:wrap; gap:1rem;">
+                    <span style="font-size:0.8rem; color:var(--text-muted); font-family:var(--font-mono);">Accredited: MIS (Very Good Honors) • ITI (94%)</span>
+                    <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+                        <a href="assets/docs/Kyrollos_Melad_CV.pdf" target="_blank" rel="noopener" class="btn btn-sm btn-outline">👁️ View PDF</a>
+                        <a href="assets/docs/Kyrollos_Melad_CV.pdf" download="Kyrollos_Melad_CV.pdf" class="btn btn-sm btn-primary-tech">⬇️ Download Official CV (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         MODAL: PROJECT DETAIL
+         ====================================================================== -->
+    <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div>
+                    <h3 style="font-size: 1.25rem;" id="project-modal-title">Project Details</h3>
+                </div>
+                <button class="modal-close-btn" id="project-modal-close" aria-label="Close Project modal">✕</button>
+            </div>
+            <div class="modal-body" id="project-modal-body">
+                <!-- Dynamically injected -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

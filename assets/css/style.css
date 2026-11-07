@@ -1,0 +1,249 @@
+/* ==========================================================================
+   SCARFACE / KYROLLOS MELAD - DUAL-PERSONALITY PORTFOLIO
+   Design System & Core Stylesheet
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+:root {
+    /* Base Color Palette */
+    --bg-dark: #060913;
+    --bg-dark-secondary: #0c1222;
+    --bg-card: rgba(16, 24, 44, 0.75);
+    --bg-card-hover: rgba(24, 36, 66, 0.9);
+    --bg-glass: rgba(15, 23, 42, 0.65);
+    
+    /* Text Colors */
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --text-highlight: #ffffff;
+
+    /* Tech Brand (Scarface) - Cyber Neon Cyan & Violet */
+    --tech-cyan: #00f2fe;
+    --tech-cyan-glow: rgba(0, 242, 254, 0.4);
+    --tech-purple: #7928ca;
+    --tech-purple-glow: rgba(121, 40, 202, 0.4);
+    --tech-blue: #4facfe;
+    --tech-gradient: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #7928ca 100%);
+    --tech-border: rgba(0, 242, 254, 0.25);
+    --tech-chip-bg: rgba(0, 242, 254, 0.1);
+
+    /* Finance Brand (Kyrollos Melad) - Modern Fintech Navy & Emerald */
+    --fin-emerald: #10b981;
+    --fin-emerald-glow: rgba(16, 185, 129, 0.35);
+    --fin-gold: #f59e0b;
+    --fin-blue: #38bdf8;
+    --fin-navy: #1e293b;
+    --fin-gradient: linear-gradient(135deg, #38bdf8 0%, #10b981 100%);
+    --fin-border: rgba(56, 189, 248, 0.25);
+    --fin-chip-bg: rgba(56, 189, 248, 0.1);
+
+    /* Dual Fusion Gradient */
+    --fusion-gradient: linear-gradient(135deg, #00f2fe 0%, #7928ca 50%, #10b981 100%);
+    
+    /* Global Typography */
+    --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'Fira Code', monospace;
+    --font-signature: 'Playfair Display', serif;
+
+    /* Transitions & Shadows */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.7);
+    --shadow-neon-cyan: 0 0 25px rgba(0, 242, 254, 0.25);
+    --shadow-neon-purple: 0 0 25px rgba(121, 40, 202, 0.25);
+    --shadow-neon-emerald: 0 0 25px rgba(16, 185, 129, 0.25);
+
+    /* Layout Constraints */
+    --max-width: 1280px;
+    --header-height: 76px;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+}
+
+/* Base Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-image: 
+        radial-gradient(circle at 15% 15%, rgba(0, 242, 254, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 85% 20%, rgba(16, 185, 129, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 50% 60%, rgba(121, 40, 202, 0.03) 0%, transparent 50%);
+    background-attachment: fixed;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.25;
+}
+
+p {
+    color: var(--text-secondary);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    background: transparent;
+    transition: var(--transition-fast);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Section Wrapper */
+.section {
+    padding: 5.5rem 0;
+    position: relative;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 3.5rem;
+}
+
+.section-subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0.35rem 1rem;
+    border-radius: var(--radius-full);
+    margin-bottom: 1rem;
+}
+
+.subtitle-tech {
+    background: rgba(0, 242, 254, 0.1);
+    color: var(--tech-cyan);
+    border: 1px solid rgba(0, 242, 254, 0.3);
+}
+
+.subtitle-finance {
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--fin-blue);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.subtitle-fusion {
+    background: linear-gradient(135deg, rgba(0, 242, 254, 0.1), rgba(16, 185, 129, 0.1));
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+/* Gradient Text Utilities */
+.gradient-text-tech {
+    background: var(--tech-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-finance {
+    background: var(--fin-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-fusion {
+    background: var(--fusion-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Persona Specific View Modes */
+body[data-persona="tech"] .side-finance-only,
+body[data-persona="tech"] .section-finance-only {
+    display: none !important;
+}
+
+body[data-persona="finance"] .side-tech-only,
+body[data-persona="finance"] .section-tech-only {
+    display: none !important;
+}
+
+body[data-persona="tech"] {
+    --primary-accent: var(--tech-cyan);
+    --primary-glow: var(--tech-cyan-glow);
+}
+
+body[data-persona="finance"] {
+    --primary-accent: var(--fin-emerald);
+    --primary-glow: var(--fin-emerald-glow);
+}
